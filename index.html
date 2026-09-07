@@ -1,0 +1,70 @@
+html<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | My Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --primary-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { bg-color: var(--bg-color); background: var(--bg-color); color: var(--text-color); line-height: 1.6; padding: 20px; }
+        header { max-width: 800px; margin: 60px auto 40px; text-align: center; }
+        h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
+        .highlight { color: var(--primary-color); }
+        p.subtitle { font-size: 1.2rem; color: #94a3b8; }
+        
+        main { max-width: 800px; margin: 0 auto; }
+        section { margin-bottom: 40px; background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+        h2 { font-size: 1.5rem; color: #fff; margin-bottom: 20px; border-left: 4px solid var(--primary-color); padding-left: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1xl)); gap: 20px; }
+        .project-card { background: #0f172a; padding: 20px; border-radius: 8px; border: 1px solid #334155; }
+        .project-card h3 { color: var(--primary-color); margin-bottom: 10px; }
+        
+        footer { text-align: center; margin-top: 60px; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>你好，我是 <span class="highlight">[你的名字]</span></h1>
+        <p class="subtitle">未來的高級工程師 / 設計師 | 網頁作品集雛型</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>自我介紹 About Me</h2>
+            <p>目前就讀大學一年級，正在累積程式與設計實力。這個網站將記錄我大一到大四的所有精采作品，展現我的成長軌跡與專業技術。</p>
+        </section>
+
+        <section id="skills">
+            <h2>專業技能 Skills</h2>
+            <p>HTML5 / CSS3 / JavaScript / Git & GitHub / 核心潛力與學習熱忱</p>
+        </section>
+
+        <section id="projects">
+            <h2>作品專案 Projects</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <h3>專案一：個人作品集網站</h3>
+                    <p>大一課堂作業。使用 HTML5 與 CSS3 打造的響應式個人網站，這是我邁向大四畢業求職的第一步。</p>
+                </div>
+                <div class="project-card">
+                    <h3>專案二：即將解鎖...</h3>
+                    <p>未來的網頁應用程式、核心專題、或是實習成果，敬請期待！</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [你的名字]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
