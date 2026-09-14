@@ -22,8 +22,9 @@ html<!DOCTYPE html>
         section { margin-bottom: 40px; background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #334155; }
         h2 { font-size: 1.5rem; color: #fff; margin-bottom: 20px; border-left: 4px solid var(--primary-color); padding-left: 10px; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1xl)); gap: 20px; }
-        .project-card { background: #0f172a; padding: 20px; border-radius: 8px; border: 1px solid #334155; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card { display: block; background: #0f172a; padding: 20px; border-radius: 8px; border: 1px solid #334155; color: var(--text-color); text-decoration: none; transition: transform 0.2s, border-color 0.2s; }
+        .project-card:hover { transform: translateY(-4px); border-color: var(--primary-color); }
         .project-card h3 { color: var(--primary-color); margin-bottom: 10px; }
         
         footer { text-align: center; margin-top: 60px; color: #64748b; font-size: 0.9rem; }
@@ -54,6 +55,10 @@ html<!DOCTYPE html>
                     <h3>專案一：個人作品集網站</h3>
                     <p>大一課堂作業。使用 HTML5 與 CSS3 打造的響應式個人網站，這是我邁向大四畢業求職的第一步。</p>
                 </div>
+                <a class="project-card" href="digital-technology-homework.html">
+                    <h3>數位科技概論作業</h3>
+                    <p>記錄本學期的 HTML、CSS 與後續數位科技概論課程作業。點選查看各週作業內容與學習紀錄。</p>
+                </a>
                 <div class="project-card">
                     <h3>專案二：即將解鎖...</h3>
                     <p>未來的網頁應用程式、核心專題、或是實習成果，敬請期待！</p>
